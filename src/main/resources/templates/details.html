@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Monkey Details</title>
+</head>
+<body>
+<h1>Monkey Details</h1>
+
+<h1 th:text="'Details for ' + ${user.name}"></h1>
+
+<table>
+    <tr>
+        <td>Name:</td>
+        <td th:text="${user.name}"></td>
+    </tr>
+    <tr>
+        <td>Email:</td>
+        <td th:text="${user.email}"></td>
+    </tr>
+</table>
+
+</body>
+</html>

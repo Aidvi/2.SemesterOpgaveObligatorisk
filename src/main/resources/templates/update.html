@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Update Monkey</title>
+    <link rel="stylesheet"
+          href="C:\Users\Nisse\Desktop\Java Programs\Obligatorisk-Opgave-2.-semester-master\src\main\resources\static\style.css"
+          th:href="@{style.css}" />
+</head>
+<body>
+<h1>Update Monkey</h1>
+
+<form th:action="@{/update}" method="post" th:object="${user}">
+    <input type="text" th:field="*{userId}" style="display: none" readonly="readonly"/>
+    <p>Password</p>
+    <input type="text" name="password"/>
+    <p></p>
+    <input type="submit" value="Send" id="up" />
+
+</form>
+
+</body>
+</html>

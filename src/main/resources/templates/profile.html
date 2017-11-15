@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login Monkey</title>
+    <link rel="stylesheet"
+          href="C:\Users\Nisse\Desktop\Java Programs\Obligatorisk-Opgave-2.-semester-master\src\main\resources\static\style.css"
+          th:href="@{style.css}" />
+</head>
+<body>
+<h1> Congratulations you are now a monkey </h1>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+    </tr>
+    <tr th:object="${user}">
+        <td th:text="${user.userId}"/>
+        <td th:text="${user.name}"/>
+        <td th:text="${user.email}"/>
+    </tr>
+</table>
+
+<form action="delete.html">
+    <input type="submit" value="Delete Monkey" id="dm" />
+</form>
+
+<form action="update.html">
+    <input type="submit" value="Change password" id="cp" />
+</form>
+
+</body>
+</html>

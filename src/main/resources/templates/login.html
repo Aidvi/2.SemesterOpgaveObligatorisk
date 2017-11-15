@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Login, Monkey</title>
+    <link rel="stylesheet"
+          href="C:\Users\Nisse\Desktop\Java Programs\Obligatorisk-Opgave-2.-semester-master\src\main\resources\static\style.css"
+          th:href="@{style.css}" />
+</head>
+<body>
+<h1>Monkey Gateway</h1>
+
+    <form th:action="@{/login}" method="post" th:object="${user}">
+        <p>Name:</p>
+    <input type="text" th:field="*{name}"/>
+        <p>Password</p>
+    <input type="password" th:field="*{password}"/>
+        <p></p>
+        <input type="submit" value="Monkey, login" id="lm" />
+
+</form>
+
+</body>
+</html>
